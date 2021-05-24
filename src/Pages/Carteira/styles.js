@@ -20,6 +20,15 @@ export default StyleSheet.create({
     height: 224,
     width: '100%',
     marginTop: 91,
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+
+    elevation: 3,
   },
   headerCardContainer: {
     //backgroundColor: colors.red,
@@ -95,6 +104,15 @@ export default StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     //justifyContent: 'space-around',
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+
+    elevation: 3,
   },
   headerCardBalanceTitle: {
     flexDirection: 'row',
@@ -166,7 +184,7 @@ export default StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-   // backgroundColor: colors.green,
+    // backgroundColor: colors.green,
     borderBottomColor: colors.blue,
     borderBottomWidth: 2,
   },

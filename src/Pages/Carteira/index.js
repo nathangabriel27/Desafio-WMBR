@@ -246,8 +246,8 @@ export default function Carteira() {
                 source={require('../../../assets/arrowR.png')}
                 style={{
                   marginHorizontal: 17,
-                  width: 5,
-                  height: 9,
+                  width: 6,
+                  height: 10,
                 }}
               />
 

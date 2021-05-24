@@ -14,22 +14,16 @@ export default function Footer(props) {
 
 
 
-
-  /* 
-  function navigateToUserProfile() {
+  function navigateToPerfil() {
     //console.log('props:',props);
-    navigation.navigate('UserProfile')
+    navigation.navigate('Perfil')
   }
+  function navigateToCarteira() {
+    //console.log('props:',props);
+    navigation.navigate('Carteira')
+  }
+
   
-    function navigateToUserProfileFovorites(name) {
-      //console.log('props:',props);
-      navigation.navigate('UserProfileFovorites', name)
-    }
-    function navigateToNewDrink(props) {
-      //console.log('props:',props);
-      navigation.navigate('NewDrink')
-    }
-   */
   useEffect(() => {
     ///console.log('state FOOTER',state[0]);
   }, [])
@@ -72,7 +66,7 @@ export default function Footer(props) {
 
       <TouchableOpacity
         style={styles.footerButtonCenter}
-      //onPress={() => navigateToUserProfile()}
+      //onPress={() => {}}
       >
         <Image
           source={require('../../../assets/teste.png')}
@@ -84,12 +78,11 @@ export default function Footer(props) {
       </TouchableOpacity>
       <TouchableOpacity
         style={title === 'Carteira' ? styles.footerButtonSelected : styles.footerButton}
-      // onPress={() => navigateToNewDrink()}
+        onPress={() => navigateToCarteira()}
       >
         <Image
           source={require('../../../assets/Group2483icon02.png')}
           style={{
-
             width: 48,
             height: 48,
           }}
@@ -98,8 +91,8 @@ export default function Footer(props) {
       </TouchableOpacity>
 
       <TouchableOpacity
-        style={title === 'Profile' ? styles.footerButtonSelected : styles.footerButton}
-      //onPress={() => navigateToUserProfile()}
+        style={title === 'Perfil' ? styles.footerButtonSelected : styles.footerButton}
+        onPress={() => navigateToPerfil()}
       >
         <Image
           source={require('../../../assets/Group2483icon02.png')}
@@ -109,7 +102,7 @@ export default function Footer(props) {
             height: 48,
           }}
         />
-        <Text style={styles.bottonText}>{title === 'Profile' ? 'Profile' : null}</Text>
+        <Text style={styles.bottonText}>{title === 'Perfil' ? 'Perfil' : null}</Text>
 
       </TouchableOpacity>
 

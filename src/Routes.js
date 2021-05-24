@@ -4,6 +4,8 @@ import { NavigationContainer } from '@react-navigation/native';
 
 import Carteira from '../src/Pages/Carteira'
 import Perfil from '../src/Pages/Perfil'
+import PerfilUser from '../src/Pages/PerfilUser'
+import PerfilEditName from '../src/Pages/PerfilEditName'
 
 const Stack = createStackNavigator();
 
@@ -13,6 +15,8 @@ export default function Routes() {
       <Stack.Navigator initialRouteName={"Carteira"} screenOptions={{ headerShown: true, animationEnabled: false }}>
         <Stack.Screen name="Carteira" component={Carteira} options={{ title: '', headerShown: false, }} />
         <Stack.Screen name="Perfil" component={Perfil} options={{ title: '', headerShown: false, }} />
+        <Stack.Screen name="PerfilUser" component={PerfilUser} options={{ title: '', headerShown: false, }} />
+        <Stack.Screen name="PerfilEditName" component={PerfilEditName} options={{ title: '', headerShown: false, }} />
       </Stack.Navigator >
     );
   }

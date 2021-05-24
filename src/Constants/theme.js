@@ -3,13 +3,14 @@ const colors = {
   blue1: '#DBE5FF',
   red: '#FF004C',
   green: '#60D76C',
+  green1: '#97FFA2',
   gray: '#94979F',
   gray1: '#737780',
   gray2: '#36383F',
+  gray3: '#E9EBF0',
 
 
 
-  green1: '#21853b',
   green3: '#04CB01',
   green4: '#58BB62',
   green5: '#89c98f',
@@ -27,7 +28,7 @@ const colors = {
   black: '#212121',
   blackAbsolut: '#000000',
 
-  gray3: '#D8D8D8',
+
   gray4: '#F2F2F2',
   gray5: '#FBFBFB',
   white: '#FFFFFF',

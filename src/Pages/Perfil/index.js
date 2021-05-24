@@ -6,22 +6,92 @@ import { StatusBar } from 'expo-status-bar'
 import Loading from '../../Components/Loading'
 import styles from './styles';
 import { colors } from '../../Constants/theme';
+import Footer from '../../Components/Footer';
+import CardMenu from '../../Components/CardMenu';
 
 
 export default function Perfil() {
   const navigation = useNavigation()
-
-  const [loadingVisible, setLoadingVisible] = useState(false)
-
-
   return (
     <>
       <StatusBar barStyle="ligh-content" hidden={true} color={colors.gray} />
-      <Loading loadingVisible={loadingVisible} textMensage={'Buscando dados'} />
-      <View style={styles.container}>
-        <Text>TEla de Perfil</Text>
+      <ScrollView style={{backgroundColor: '#E5E5E5'}}>
+        <View style={styles.container} />
+        <View style={styles.header}>
+          <View style={styles.headerProfilePhoto}>
+            <Image
+              source={require('../../../assets/Grupo2.png')}
+              style={{
+                marginTop: -54,
+                width: 144,
+                height: 144,
+              }}
+            />
+            <Image
+              source={require('../../../assets/Groupprofile.png')}
+              style={{
+                marginTop: -54,
+                width: 144,
+                height: 144,
+              }}
+            />
+            <Image
+              source={require('../../../assets/Grupo4.png')}
+              style={{
+                marginTop: -54,
+                width: 144,
+                height: 144,
+              }}
+            />
+          </View>
+          <View style={styles.headerProfile}>
+            <Text style={styles.headerProfileName}>José Sechim</Text>
+            <View style={styles.headerProfiletag}>
+              <Text style={styles.headerProfileNameTag}>User Beginner</Text>
+            </View>
+            <TouchableOpacity
+              style={styles.headerProfileButton}
+              onPress={() => { }}
+            >
+              <Image
+                source={require('../../../assets/Group2483icon02.png')}
+                style={{
 
-      </View>
+                  width: 39,
+                  height: 40,
+                }}
+              />
+              <Text style={styles.headerProfileText}>Comprar HermyCard</Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+              style={styles.headerProfileButtonLogout}
+              onPress={() => { }}
+            >
+              <Image
+                source={require('../../../assets/Group2483icon02.png')}
+                style={{
+
+                  width: 39,
+                  height: 40,
+                }}
+              />
+              <Text style={styles.headerProfileButtonLogoutText}>Sair</Text>
+            </TouchableOpacity>
+
+          </View>
+
+        </View>
+        <View style={styles.body}>
+          <CardMenu route={'PerfilUser'} title={'Dados pessoais'} subtitle={'Veja e edite dados cadrastais'}/>
+          <CardMenu route={false} title={'Endereço'} subtitle={'Confira e/ou edite seu endereço '}/>
+          <CardMenu route={false} title={'Formas de pagar'} subtitle={'Verifique as formas de pagamento'}/>
+          <CardMenu route={false} title={'Configurações'} subtitle={'Veja e edite dados cadrastais'}/>
+          <CardMenu route={false} title={'Alterar senha'} subtitle={'Veja e edite dados cadrastais'}/>
+          <CardMenu route={false} title={'Privacidade'} subtitle={'Veja e edite dados cadrastais'}/>
+        </View>
+      </ScrollView>
+
+      <Footer title={'Perfil'} />
     </>
 
   );
