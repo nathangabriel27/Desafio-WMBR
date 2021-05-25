@@ -76,6 +76,7 @@ export default function ListAdm() {
           >
             {transactionsAndVouchers.map((transactionsAndVouchers, i) => (
               <Image
+                key={i}
                 source={require('../../../assets/user1.png')}
                 style={{
                   height: 66,
@@ -86,6 +87,7 @@ export default function ListAdm() {
             ))}
             {transactionsAndVouchers.map((transactionsAndVouchers, i) => (
               <Image
+                key={i}
                 source={require('../../../assets/user1.png')}
                 style={{
                   height: 66,

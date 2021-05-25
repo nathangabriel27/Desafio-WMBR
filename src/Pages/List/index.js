@@ -33,12 +33,12 @@ export default function List() {
 
   return (
 
-    <View style={styles.container}>
+    <ScrollView style={styles.container}>
       <ImageBackground
         source={require('../../../assets/Frame.png')}
         style={styles.imageBackground}
       >
-
+        <View style={styles.containerHeader} />
 
         <View style={styles.main}>
           <Text style={styles.mainTextTitleIcon}>✌️</Text>
@@ -104,7 +104,7 @@ export default function List() {
 
 
       </ImageBackground>
-    </View>
+    </ScrollView>
 
 
   );

@@ -9,13 +9,12 @@ export default StyleSheet.create({
     backgroundColor: colors.blue,
     height: '100%',
     width: '100%',
-    justifyContent: 'flex-start',
-    alignItems: 'center',
-
   },
   imageBackground: {
     width: width,
-   // height: 384,
+  },
+  containerHeader:{
+    height: 170,
   },
   main: {
     height: 125,
