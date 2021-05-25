@@ -4,84 +4,251 @@ import { colors, sizes } from '../../Constants/theme';
 
 
 export default StyleSheet.create({
-  container: {
-    height: 120,
-    backgroundColor: '#E5E5E5'
+  photoList: {
+    backgroundColor: colors.red,
+    justifyContent: 'flex-end',
+    alignItems: 'center',
+  },
+  photoListText: {
+    position: 'absolute',
+    color: colors.white,
+    paddingBottom: 20,
   },
   header: {
+    backgroundColor: colors.white,
+    height: 140,
     marginHorizontal: 20,
-    backgroundColor: colors.blue,
-    borderRadius: 12,
-    height: 373,
+    paddingVertical: 28,
+    borderBottomWidth: 0.3,
+    borderBottomColor: colors.gray3,
+  },
+  headerText: {
+    fontWeight: 'bold',
+    fontSize: 20,
+  },
+  headerDateItens: {
+    marginTop: 19,
+    flexDirection: 'row',
     justifyContent: 'flex-start',
     alignItems: 'center',
   },
-  headerProfilePhoto: {
+  headerDate: {
     flexDirection: 'row',
   },
-  headerProfile: {
-    //backgroundColor: colors.red,
-    width: '100%',
-    alignItems: 'center',
+  headerDateText: {
+    color: colors.gray2,
+    marginLeft: 5,
   },
-  headerProfileName: {
-    marginTop: 40,
-    fontSize: 27,
+  headerDateSubtext: {
+    color: colors.blue,
     fontWeight: 'bold',
-    color: colors.white,
+  },
 
-  },
-  headerProfiletag: {
-    height: 27,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: colors.green1,
-    paddingHorizontal: 31,
-    borderRadius: 160,
-    marginTop: 13,
-
-  },
-  headerProfileNameTag: {
-    color: colors.blue,
-  },
-  headerProfileButton: {
-    width: '80%',
-    height: 48,
-    marginHorizontal: 26,
+  friends: {
+    height: 176,
     backgroundColor: colors.white,
-    justifyContent: 'center',
+    borderBottomWidth: 0.3,
+    borderBottomColor: colors.gray3,
+  },
+  friendsHeader: {
+    //backgroundColor: colors.green1,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
     alignItems: 'center',
-    borderRadius: 8,
-    marginBottom: 17,
-    marginTop: 33,
+    paddingHorizontal: 20,
+    paddingTop: 35,
+    paddingBottom: 19,
+  },
+  friendsHeaderUsers: {
     flexDirection: 'row',
   },
-  headerProfileText: {
-    //width: '100%',
-    fontSize: 14,
+  friendsHeaderUsersNumbers: {
     color: colors.blue,
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    fontSize: 14,
   },
-  headerProfileButtonLogout: {
-    width: '80%',
-    height: 48,
-    marginHorizontal: 26,
-    backgroundColor: "rgba(255,255,255,0.2);",
+  friendsHeaderUsersText: {
+    color: colors.black,
+    fontWeight: '700',
+    fontSize: 14,
+  },
+  friendsHeaderView: {
+    color: colors.blue,
+    fontSize: 14,
+  },
+
+
+  pricing: {
+    height: 172,
+    backgroundColor: colors.white,
+    borderBottomWidth: 0.3,
+    borderBottomColor: colors.gray3,
+  },
+  pricingCollected: {
+    flexDirection: 'row',
+    paddingLeft: 20,
+    paddingTop: 40,
+  },
+  pricingCollectedText: {
+    marginRight: 11,
+    marginBottom: 25,
+    fontSize: 12,
+
+  },
+  pricingCollectedValue: {
+    //marginBottom: 18,
+    fontSize: 28,
+    fontWeight: '900',
+    color: colors.green2,
+  },
+  progress: {
+    backgroundColor: colors.red,
+    paddingHorizontal: 20,
+  },
+
+  progressState1: {
+    backgroundColor: colors.gray5,
+    height: 28,
+    marginVertical: 1,
+    borderRadius: 28,
+    position: 'absolute',
+    marginHorizontal: 20,
+  },
+  progressState2: {
+    backgroundColor: colors.green2,
+    height: 28,
+    marginVertical: 1,
+    borderRadius: 28,
+    position: 'absolute',
+    marginHorizontal: 20,
+  },
+  progressState3: {
+    backgroundColor: colors.blue,
+    height: 28,
+    marginVertical: 1,
+    borderRadius: 28,
+    position: 'absolute',
+    marginHorizontal: 20,
+  },
+  progressState4: {
     justifyContent: 'center',
     alignItems: 'center',
-    borderRadius: 8,
-    marginBottom: 34,
-
-    flexDirection: 'row',
-
+    height: 28,
+    marginVertical: 1,
+    borderRadius: 28,
+    position: 'absolute',
+    marginHorizontal: 20,
   },
-  headerProfileButtonLogoutText: {
+  progressText: {
     fontSize: 14,
-    color: colors.white,
+    fontWeight: 'bold',
+    color: colors.black,
   },
 
+  pricingTotal: {
+    marginTop: 43,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingHorizontal: 20,
+  },
+  pricingMin: {
+    fontSize: 12,
+    color: colors.blue,
+  },
+  pricingTotalView: {
+    flexDirection: 'row',
+  },
+  pricingTotalText: {
+    fontSize: 12,
+    color: colors.gray1,
+  },
+  pricingTotalValue: {
+    fontSize: 12,
+    color: colors.black,
+  },
 
   body: {
-    marginTop: 15,
+    height: 202,
+    backgroundColor: colors.white,
+    borderBottomWidth: 0.3,
+    borderBottomColor: colors.gray3,
+    paddingHorizontal: 20,
+    paddingVertical: 32,
+  },
+  bodyTitle: {
+    marginBottom: 11,
+    fontSize: 15,
+    fontWeight: 'bold'
+  },
+  bodyText: {
+    paddingRight: 20,
+    fontSize: 13,
+  },
+
+  video: {
+    height: 291,
+    paddingHorizontal: 20,
+    paddingTop: 32,
+  },
+  videoTitle: {
+    paddingBottom: 12,
+    fontSize: 12,
+    fontWeight: 'bold',
+  },
+  videoPlayer: {
+    height: 176,
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+
+
+  footer: {
+    backgroundColor: colors.white,
+    height: 109,
+    flexDirection: 'row',
+    paddingHorizontal: 20,
+    paddingTop: 13,
+    justifyContent: 'center',
+    // alignItems: 'center',
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+
+    elevation: 5,
+
+  },
+  footerButtonBlue: {
+    backgroundColor: colors.blue,
+    height: 50,
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: '70%',
+    borderRadius: 8,
+    flexDirection: 'row',
+
+  },
+  footerText: {
+    marginLeft: 10,
+    fontSize: 12,
+    color: colors.white,
+    fontWeight: 'bold',
+  },
+  footerButtonBack: {
+    marginLeft: 13,
+    backgroundColor: colors.white,
+    height: 50,
+    paddingHorizontal: 16,
+    paddingVertical: 18,
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 8,
+    borderWidth: 2,
+    borderColor: colors.blue,
+
   },
 })
