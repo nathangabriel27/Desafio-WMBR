@@ -11,6 +11,7 @@
 ##  📚 Bibliotecas 📚
 
 - Expo
+
 Não foi detalhado se era para usar ou CLI ou Expo, porem utilizei o Bare Workflow que permite que eu execute o codigo nativo e ainda me permite acesso aos recursos do Expo. 
 
 link explicativo.
