@@ -22,8 +22,16 @@ export default function Footer(props) {
     //console.log('props:',props);
     navigation.navigate('Carteira')
   }
+  function navigateToGenerateVoucher() {
+    //console.log('props:',props);
+    navigation.navigate('GenerateVoucher')
+  }
+  function navigateToList() {
+    //console.log('props:',props);
+    navigation.navigate('List')
+  }
 
-  
+
   useEffect(() => {
     ///console.log('state FOOTER',state[0]);
   }, [])
@@ -34,13 +42,14 @@ export default function Footer(props) {
     <View style={styles.footer}>
       <TouchableOpacity
         style={title === 'Voucher' ? styles.footerButtonSelected : styles.footerButton}
-        onPress={() => { }}
+        onPress={() => navigateToGenerateVoucher()}
       >
         <Image
-          source={require('../../../assets/Group2483icon02.png')}
+          source={require('../../../assets/voucher2.png')}
           style={{
-            width: 45,
-            height: 45,
+            width: 20,
+            height: 20,
+            marginTop: 30,
           }}
         />
         <Text style={styles.bottonText}>{title === 'Voucher' ? 'Voucher' : null}</Text>
@@ -49,14 +58,13 @@ export default function Footer(props) {
 
       <TouchableOpacity
         style={title === 'Listas' ? styles.footerButtonSelected : styles.footerButton}
-      // onPress={() => navigateToNewDrink()}
+      onPress={() => navigateToList()}
       >
         <Image
-          source={require('../../../assets/Group2483icon02.png')}
+          source={require('../../../assets/listas1.png')}
           style={{
+            marginTop: 30,
 
-            width: 48,
-            height: 48,
           }}
         />
 
@@ -69,10 +77,10 @@ export default function Footer(props) {
       //onPress={() => {}}
       >
         <Image
-          source={require('../../../assets/teste.png')}
+          source={require('../../../assets/logohermy.png')}
           style={{
-            width: 54,
-            height: 56,
+           
+       
           }}
         />
       </TouchableOpacity>
@@ -81,10 +89,10 @@ export default function Footer(props) {
         onPress={() => navigateToCarteira()}
       >
         <Image
-          source={require('../../../assets/Group2483icon02.png')}
+          source={require('../../../assets/carteira2.png')}
           style={{
-            width: 48,
-            height: 48,
+            marginTop: 30,
+    
           }}
         />
         <Text style={styles.bottonText}>{title === 'Carteira' ? 'Carteira' : null}</Text>
@@ -95,11 +103,10 @@ export default function Footer(props) {
         onPress={() => navigateToPerfil()}
       >
         <Image
-          source={require('../../../assets/Group2483icon02.png')}
+          source={require('../../../assets/perfil.png')}
           style={{
+            marginTop: 30,
 
-            width: 48,
-            height: 48,
           }}
         />
         <Text style={styles.bottonText}>{title === 'Perfil' ? 'Perfil' : null}</Text>

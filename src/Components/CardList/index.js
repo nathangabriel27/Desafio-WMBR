@@ -26,11 +26,7 @@ export default function CardList(props) {
 
       <View style={[styles.containerIconItem, { backgroundColor: colorBackground }]}>
         <Image
-          source={require('../../../assets/Group2483icon02.png')}
-          style={{
-            width: 48,
-            height: 48,
-          }}
+          source={require('../../../assets/Grouphermycard.png')}
         />
       </View>
 

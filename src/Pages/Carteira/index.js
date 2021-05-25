@@ -189,11 +189,10 @@ export default function Carteira() {
               <View style={styles.headerCardContainerValue}>
                 <View style={styles.headerCardContainerItens}>
                   <Image
-                    source={require('../../../assets/teste.png')}
+                    source={require('../../../assets/carteira.png')}
                     style={{
                       marginRight: 26,
-                      width: 48,
-                      height: 48,
+                    
                     }}
                   />
                   <View>
@@ -225,7 +224,7 @@ export default function Carteira() {
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.headerCardButton}>
                   <Image
-                    source={require('../../../assets/Group2504icon03.png')}
+                    source={require('../../../assets/validation.png')}
                     style={{
 
                       width: 17,
@@ -258,12 +257,11 @@ export default function Carteira() {
           <View style={styles.headerCardBalance}>
             <View style={styles.headerCardBalanceTitle}>
               <Image
-                source={require('../../../assets/teste.png')}
+                source={require('../../../assets/credcard.png')}
                 style={{
                   marginRight: 33,
                   marginLeft: 24,
-                  width: 48,
-                  height: 48,
+                
                 }}
               />
               <View style={styles.headerCardBalanceText}>

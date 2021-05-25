@@ -10,7 +10,7 @@ import Footer from '../../Components/Footer';
 import CardMenu from '../../Components/CardMenu';
 
 
-export default function Perfil() {
+export default function ListAdm() {
   const navigation = useNavigation()
   return (
     <>

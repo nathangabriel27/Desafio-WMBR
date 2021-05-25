@@ -39,7 +39,11 @@ export default function PerfilUser() {
   return (
     <>
       <StatusBar barStyle="ligh-content" hidden={true} color={colors.gray} />
-      <ScrollView style={{ backgroundColor: colors.white }}>
+      <ScrollView 
+      style={{ backgroundColor: colors.white }}
+      showsVerticalScrollIndicator={false}
+      bounces={false}
+      >
         <View style={styles.header}>
           <View style={styles.headerBack}>
             <TouchableOpacity
@@ -68,10 +72,11 @@ export default function PerfilUser() {
           />
           <TouchableOpacity style={styles.containerPhotoIcon}>
             <Image
-              source={require('../../../assets/Group2483icon02.png')}
+              source={require('../../../assets/photoicon.png')}
               style={{
-                width: 40,
-                height: 40,
+                width: 22,
+                height: 20,
+                margin: 10,
               }}
             />
           </TouchableOpacity>

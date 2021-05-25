@@ -6,6 +6,10 @@ import Carteira from '../src/Pages/Carteira'
 import Perfil from '../src/Pages/Perfil'
 import PerfilUser from '../src/Pages/PerfilUser'
 import PerfilEditName from '../src/Pages/PerfilEditName'
+import GenerateVoucher from '../src/Pages/GenerateVoucher'
+import ViewVoucher from '../src/Pages/ViewVoucher'
+import List from '../src/Pages/List'
+import ListAdm from '../src/Pages/ListAdm'
 
 const Stack = createStackNavigator();
 
@@ -17,6 +21,10 @@ export default function Routes() {
         <Stack.Screen name="Perfil" component={Perfil} options={{ title: '', headerShown: false, }} />
         <Stack.Screen name="PerfilUser" component={PerfilUser} options={{ title: '', headerShown: false, }} />
         <Stack.Screen name="PerfilEditName" component={PerfilEditName} options={{ title: '', headerShown: false, }} />
+        <Stack.Screen name="GenerateVoucher" component={GenerateVoucher} options={{ title: '', headerShown: false, }} />
+        <Stack.Screen name="ViewVoucher" component={ViewVoucher} options={{ title: '', headerShown: false, }} />
+        <Stack.Screen name="List" component={List} options={{ title: '', headerShown: false, }} />
+        <Stack.Screen name="ListAdm" component={ListAdm} options={{ title: '', headerShown: false, }} />
       </Stack.Navigator >
     );
   }

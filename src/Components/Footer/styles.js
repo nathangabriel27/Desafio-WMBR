@@ -24,19 +24,19 @@ export default StyleSheet.create({
   },
   footerButton: {
     //backgroundColor: colors.green,
-    justifyContent: 'flex-end',
+    justifyContent: 'center',
     alignItems: 'center',
     height: 85,
   },
 
   footerButtonCenter: {
-    // backgroundColor: colors.green,
+    //backgroundColor: colors.gray,
     justifyContent: 'center',
     alignItems: 'center',
     height: 85,
   },
   footerButtonSelected: {
-    //backgroundColor: colors.green,
+   //backgroundColor: colors.red,
     justifyContent: 'flex-start',
     alignItems: 'center',
     height: 85,

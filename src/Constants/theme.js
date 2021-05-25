@@ -4,14 +4,15 @@ const colors = {
   red: '#FF004C',
   green: '#60D76C',
   green1: '#97FFA2',
+  green2: '#72DC7D',
   gray: '#94979F',
   gray1: '#737780',
   gray2: '#36383F',
   gray3: '#E9EBF0',
+  gray4: '#737780',
 
 
 
-  green3: '#04CB01',
   green4: '#58BB62',
   green5: '#89c98f',
   red1: '#b31212',
@@ -29,7 +30,7 @@ const colors = {
   blackAbsolut: '#000000',
 
 
-  gray4: '#F2F2F2',
+
   gray5: '#FBFBFB',
   white: '#FFFFFF',
   orange: '#ba501c',
