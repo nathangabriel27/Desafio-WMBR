@@ -3,12 +3,8 @@ import { Keyboard, Alert, Image, Text, TextInput, KeyboardAvoidingView, Platform
 import { useNavigation } from '@react-navigation/native';
 import { StatusBar } from 'expo-status-bar'
 //Componentes
-import Loading from '../../Components/Loading'
 import styles from './styles';
 import { colors } from '../../Constants/theme';
-import Footer from '../../Components/Footer';
-import CardMenu from '../../Components/CardMenu';
-
 
 export default function PerfilEditName() {
   const navigation = useNavigation()
@@ -28,8 +24,8 @@ export default function PerfilEditName() {
       ],
       { cancelable: false }
     )
-
   }
+
   return (
     <TouchableWithoutFeedback
       onPress={Keyboard.dismiss}
@@ -58,7 +54,6 @@ export default function PerfilEditName() {
             </View>
             <Text style={styles.headerText}>Alterar nome</Text>
           </View>
-
 
           <View style={styles.main}>
             <View style={
@@ -122,6 +117,5 @@ export default function PerfilEditName() {
         </View>
       </KeyboardAvoidingView>
     </TouchableWithoutFeedback>
-
   );
 }

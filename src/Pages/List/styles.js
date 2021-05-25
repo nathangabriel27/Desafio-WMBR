@@ -1,7 +1,6 @@
 import { Dimensions, StyleSheet, } from 'react-native';
-import { color } from 'react-native-reanimated';
-const { height, width } = Dimensions.get('window');
-import { colors, sizes } from '../../Constants/theme';
+const { width } = Dimensions.get('window');
+import { colors } from '../../Constants/theme';
 
 
 export default StyleSheet.create({
@@ -13,7 +12,7 @@ export default StyleSheet.create({
   imageBackground: {
     width: width,
   },
-  containerHeader:{
+  containerHeader: {
     height: 170,
   },
   main: {
@@ -23,18 +22,20 @@ export default StyleSheet.create({
   },
   mainTextTitleIcon: {
     fontSize: 26,
+    fontFamily: 'Gilroy-Light',
+    fontWeight: '500',
   },
   mainTextTitle: {
     fontSize: 18,
     textAlign: 'center',
     color: colors.white,
-    fontWeight: 'bold'
+    fontFamily: 'Gilroy-ExtraBold',
   },
   mainTextSubtitle: {
     fontSize: 14,
     textAlign: 'center',
     color: colors.white,
-
+    fontFamily: 'Inter-Regular',
   },
 
 
@@ -52,10 +53,9 @@ export default StyleSheet.create({
     marginTop: 19,
   },
   bodyTitle: {
-    fontWeight: 'bold',
+    fontFamily: 'Gilroy-ExtraBold',
     fontSize: 15,
     marginLeft: 22,
-    //backgroundColor: colors.red,
     marginRight: 38,
     paddingBottom: 18,
     borderBottomWidth: 0.3,
@@ -64,33 +64,30 @@ export default StyleSheet.create({
   bodyItens: {
     width: '100%',
     height: 119,
-
     flexDirection: 'row',
     justifyContent: 'space-around',
     alignItems: 'center',
   },
   bodyItensText: {
-
   },
   bodyProgress: {
-
   },
   bodyProgressTitle: {
     fontSize: 12,
+    fontFamily: 'Inter-Regular',
   },
   bodyProgressText: {
     fontSize: 18,
-    fontWeight: 'bold',
+    fontFamily: 'Inter-Bold',
     color: colors.blue,
   },
   footer: {
     width: '100%',
-    //backgroundColor: colors.red,
     justifyContent: 'center',
     alignItems: 'center',
     paddingHorizontal: 28,
     marginBottom: 58,
-    zIndex:99,
+    zIndex: 99,
   },
   footerButton: {
     width: '100%',
@@ -99,35 +96,30 @@ export default StyleSheet.create({
     borderRadius: 8,
     justifyContent: 'center',
     alignItems: 'center',
-
   },
   footerButtonText: {
     fontSize: 16,
-    fontWeight: 'bold',
+    fontFamily: 'Gilroy-ExtraBold',
     color: colors.blue
   },
 
-
-
-
-
-
   dataText: {
-    // backgroundColor: colors.green,
     marginVertical: 4,
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-
   },
   dataTextTitle: {
     fontSize: 12,
     color: colors.blue,
+    fontFamily: 'Gilroy-Light',
+    fontWeight: '500',
   },
   dataTextText: {
     fontSize: 12,
     color: colors.blue,
-    fontWeight: 'bold',
+    fontFamily: 'Gilroy-ExtraBold',
+
   },
 })
 

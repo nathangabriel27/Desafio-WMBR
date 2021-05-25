@@ -1,28 +1,17 @@
 import React, { useRef, useState } from 'react';
-import { Keyboard, Alert, Image, Text, ImageBackground, Platform, TouchableWithoutFeedback, Dimensions, TouchableOpacity, View } from 'react-native';
+import { Image, Text, ImageBackground, Dimensions, TouchableOpacity, View } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import { StatusBar } from 'expo-status-bar'
 import ProgressCircle from 'react-native-progress-circle'
-
 //Componentes
-
 import styles from './styles';
-import { colors } from '../../Constants/theme';
 import { ScrollView } from 'react-native-gesture-handler';
 
-
-
 export default function List() {
-  const { height, width } = Dimensions.get('window');
-
-  const navigation = useNavigation()
-  const [name, setName] = useState('')
+   const navigation = useNavigation()
 
   function navigateToListAdm() {
-    //console.log('props:',props);
-    navigation.navigate('ListAdm')
+     navigation.navigate('ListAdm')
   }
-
 
   const dataText = (props) => (
     <View style={styles.dataText}    >
@@ -32,7 +21,6 @@ export default function List() {
   )
 
   return (
-
     <ScrollView style={styles.container}>
       <ImageBackground
         source={require('../../../assets/Frame.png')}
@@ -89,7 +77,6 @@ export default function List() {
               </ProgressCircle>
             </View>
           </View>
-
         </View>
 
         <View style={styles.footer}>
@@ -100,12 +87,7 @@ export default function List() {
             <Text style={styles.footerButtonText}>Visualizar lista</Text>
           </TouchableOpacity>
         </View>
-
-
-
       </ImageBackground>
     </ScrollView>
-
-
   );
 }

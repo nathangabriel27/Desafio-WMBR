@@ -55,10 +55,12 @@ export default StyleSheet.create({
   },
   headerCardText: {
     fontSize: sizes.text,
+    fontFamily:'Inter-Regular'
   },
   headerCardValue: {
     fontSize: sizes.title,
-    fontWeight: 'bold'
+    //fontWeight: 'bold',
+    fontFamily:'Gilroy-ExtraBold'
   },
   headerCardBotton: {
     // backgroundColor: colors.gray,
@@ -92,7 +94,8 @@ export default StyleSheet.create({
 
   },
   headerCardButtonText: {
-    fontSize: sizes.subTitle
+    fontSize: sizes.subTitle,
+    fontFamily:'Inter-Regular',
   },
 
   headerCardBalance: {
@@ -125,10 +128,11 @@ export default StyleSheet.create({
   },
   headerCardBalanceTextSubtitle: {
     fontSize: sizes.text,
+    fontFamily:'Inter-Regular',
   },
   headerCardBalanceTextTitle: {
     fontSize: sizes.subTitle,
-    fontWeight: 'bold',
+    fontFamily:'Inter-Bold',
   },
 
 
@@ -160,11 +164,13 @@ export default StyleSheet.create({
     fontSize: 14,
     color: colors.blue,
     fontWeight: 'bold',
+   fontFamily:'Gilroy-ExtraBold',
   },
   bodyButtonTextSelected: {
     fontSize: 13,
     opacity: 0.6,
     color: colors.blue,
+    
   },
   bodyList: {
     //backgroundColor: colors.red,
@@ -190,11 +196,13 @@ export default StyleSheet.create({
   },
   tabItemtextSelected: {
     color: colors.blue,
-    fontWeight: 'bold',
+    fontFamily:'Gilroy-ExtraBold',
     marginVertical: 12,
   },
   tabItemtext: {
     color: colors.blue1,
+   fontFamily:'Gilroy-Light',
+
   },
 
 })

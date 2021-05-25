@@ -1,4 +1,4 @@
-import axios from 'axios';
+/* import axios from 'axios';
 
 const http = 'https://enderecoAPI.com.br'
 axios.defaults.timeout = 15000
@@ -8,4 +8,4 @@ const api = axios.create({
   timeoutErrorMessage: 'Requisição demorou mais que o esperado',
 })
 
-export { api, http };
+export { api, http }; */

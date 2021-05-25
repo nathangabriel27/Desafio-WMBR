@@ -1,20 +1,14 @@
-import React, { useRef, useState } from 'react';
-import { Keyboard, Alert, Image, Text, ImageBackground, Platform, TouchableWithoutFeedback, Dimensions, TouchableOpacity, View } from 'react-native';
+import React from 'react';
+import { Image, Text, ImageBackground, Dimensions, TouchableOpacity, View } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import { StatusBar } from 'expo-status-bar'
 //Componentes
 
 import styles from './styles';
-import { colors } from '../../Constants/theme';
 import { ScrollView } from 'react-native-gesture-handler';
 
-
-
 export default function ViewVoucher() {
-  const { height, width } = Dimensions.get('window');
-
+  const { width } = Dimensions.get('window');
   const navigation = useNavigation()
-  const [name, setName] = useState('')
 
   const dataText = (props) => (
     <View style={styles.dataText}    >
@@ -24,7 +18,6 @@ export default function ViewVoucher() {
   )
 
   return (
-
     <View style={styles.container}>
       <ImageBackground
         source={require('../../../assets/Frame.png')}
@@ -77,7 +70,5 @@ export default function ViewVoucher() {
         </ScrollView>
       </ImageBackground>
     </View>
-
-
   );
 }

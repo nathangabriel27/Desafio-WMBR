@@ -44,7 +44,7 @@ export default StyleSheet.create({
   bottonText: {
     color: colors.blue,
     fontSize: 12,
-    fontWeight: '700'
+    fontFamily:'Inter-Bold',
   },
 
 })

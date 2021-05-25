@@ -3,12 +3,8 @@ import { Keyboard, Alert, Image, Text, TextInput, KeyboardAvoidingView, Platform
 import { useNavigation } from '@react-navigation/native';
 import { StatusBar } from 'expo-status-bar'
 //Componentes
-import Loading from '../../Components/Loading'
 import styles from './styles';
 import { colors } from '../../Constants/theme';
-import Footer from '../../Components/Footer';
-import CardMenu from '../../Components/CardMenu';
-
 
 export default function GenerateVoucher() {
   const navigation = useNavigation()
@@ -20,21 +16,6 @@ export default function GenerateVoucher() {
       setCoin('')
     }
   }, [coin])
-
-  function alterName() {
-    Keyboard.dismiss
-    Alert.alert(
-      'Alterar nome  ',
-      'Nome alterado com sucesso',
-      [
-        {
-          text: 'Ok', onPress: () => navigation.pop()
-        },
-      ],
-      { cancelable: false }
-    )
-
-  }
 
   function coinFormater(props) {
     let data = props + '';
@@ -49,7 +30,6 @@ export default function GenerateVoucher() {
   }
 
   function navigateToViewVoucher() {
-    //console.log('props:',props);
     navigation.navigate('ViewVoucher')
   }
   return (
@@ -107,9 +87,6 @@ export default function GenerateVoucher() {
               <Text style={styles.mainBottonContainerTitle}>{`${balanceAvailable}`}</Text>
             </View>
           </View>
-
-
-
           <View style={styles.footer}>
             <TouchableOpacity
               style={styles.footerButton}
@@ -121,6 +98,5 @@ export default function GenerateVoucher() {
         </View>
       </KeyboardAvoidingView>
     </TouchableWithoutFeedback>
-
   );
 }

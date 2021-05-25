@@ -1,20 +1,19 @@
 import React, { useEffect, useState } from 'react';
-import { Alert, Image, Text, TextInput, ScrollView, Dimensions, TouchableOpacity, View } from 'react-native';
+import {  Image, Text, ScrollView, Dimensions, TouchableOpacity, View } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { StatusBar } from 'expo-status-bar'
 //Componentes
-import Loading from '../../Components/Loading'
 import styles from './styles';
 import { colors } from '../../Constants/theme';
-import Footer from '../../Components/Footer';
-import CardMenu from '../../Components/CardMenu';
 import { transactionsAndVouchers } from '../../Constants/data';
 
-
 export default function ListAdm() {
-  const { height, width } = Dimensions.get('window');
-
+  const {  width } = Dimensions.get('window');
   const navigation = useNavigation()
+
+  function navigateToCarteira() {
+      navigation.navigate('Carteira')
+  }
 
   return (
     <>
@@ -40,9 +39,6 @@ export default function ListAdm() {
             <View style={styles.headerDate}>
               <Image
                 source={require('../../../assets/Groupcalendar.png')}
-                style={{
-
-                }}
               />
               <Text style={styles.headerDateText}>Prazo: </Text>
               <Text style={styles.headerDateSubtext}>20/12</Text>
@@ -58,7 +54,6 @@ export default function ListAdm() {
               <Text style={styles.headerDateSubtext}>36 dias</Text>
             </View>
           </View>
-
         </View>
 
         <View style={styles.friends}>
@@ -132,23 +127,17 @@ export default function ListAdm() {
           <View style={styles.videoPlayer}>
             <Image
               source={require('../../../assets/video.png')}
-              style={{
-
-              }}
             />
           </View>
         </View>
 
-
         <View style={styles.footer}>
           <TouchableOpacity
             style={styles.footerButtonBlue}
+            onPress={() => navigateToCarteira()}
           >
             <Image
               source={require('../../../assets/contr.png')}
-              style={{
-
-              }}
             />
             <Text style={styles.footerText}>{`Contribuir`}</Text>
           </TouchableOpacity>
@@ -157,16 +146,9 @@ export default function ListAdm() {
           >
             <Image
               source={require('../../../assets/arrowback.png')}
-              style={{
-
-              }}
             />
           </TouchableOpacity>
-
-
         </View>
-
-
       </ScrollView>
     </>
 

@@ -4,16 +4,20 @@ import AppLoading from 'expo-app-loading'
 import * as Font from "expo-font";
 
 export default function App() {
-/*   const [isLoadingFontComplete, setIsLoadingFontComplete] = useState(false);
+  const [isLoadingFontComplete, setIsLoadingFontComplete] = useState(false);
 
   const handleFontsAsync = async () => {
     return Promise.all([
       Font.loadAsync({
-        "Montserrat-Regular": require("./assets/fonts/Montserrat/Montserrat-Regular.ttf"),
-        "Montserrat-Bold": require("./assets/fonts/Montserrat/Montserrat-Bold.ttf"),
+        'Gilroy-ExtraBold': require('./assets/Fonts/Gilroy/Gilroy-ExtraBold.otf'),
+        'Gilroy-Light': require('./assets/Fonts/Gilroy/Gilroy-Light.otf'),
+        'Inter-Bold': require('./assets/Fonts/Inter/Inter-Bold.ttf'),
+        'Inter-Light': require('./assets/Fonts/Inter/Inter-Light.ttf'),
+        'Inter-Regular': require('./assets/Fonts/Inter/Inter-Regular.ttf'),
+        'Inter-SemiBold': require('./assets/Fonts/Inter/Inter-SemiBold.ttf'),
       })
     ],
-      //console.log('Fonte carregada')
+      console.log('Fonte carregada')
     );
   };
   if (!isLoadingFontComplete) {
@@ -25,7 +29,7 @@ export default function App() {
         }
       />
     );
-  } */
+  }
 
   return (
     <Routes />

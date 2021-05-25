@@ -10,7 +10,6 @@ export default StyleSheet.create({
     width: '100%',
     justifyContent: 'flex-start',
     alignItems: 'center',
-
   },
   imageBackground: {
     width: width,
@@ -18,13 +17,11 @@ export default StyleSheet.create({
   },
   header: {
     height: 72,
-    // backgroundColor: colors.red,
     justifyContent: 'center',
     alignItems: 'flex-end',
     paddingRight: 16,
   },
   headerClose: {
-    //backgroundColor: colors.blue,
     height: 72,
     width: 72,
     justifyContent: 'center',
@@ -42,40 +39,33 @@ export default StyleSheet.create({
     fontSize: 18,
     textAlign: 'center',
     color: colors.white,
-    fontWeight: 'bold'
+    fontFamily: 'Gilroy-ExtraBold',
   },
-  body: {
-  },
-  bodyQRCode: {
-    // backgroundColor: colors.red,
 
+  bodyQRCode: {
     paddingTop: 72,
     paddingBottom: 28,
     justifyContent: 'center',
     alignItems: 'center',
-
   },
 
   dataText: {
-    // backgroundColor: colors.green,
     marginVertical: 4,
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-
   },
   dataTextTitle: {
     fontSize: 14,
     color: colors.white,
+    fontFamily: 'Inter-Regular',
   },
   dataTextText: {
     fontSize: 14,
     color: colors.white,
-    fontWeight: 'bold',
+    fontFamily: 'Inter-Bold',
   },
   footer: {
-   // backgroundColor: colors.green,
-
     justifyContent: 'center',
     alignItems: 'center',
     marginTop: 67,
@@ -92,11 +82,11 @@ export default StyleSheet.create({
     borderBottomColor: colors.green2,
     borderBottomWidth: 2,
     marginVertical: 13,
-
   },
   footerCodeText: {
     color: colors.white,
     fontSize: 18,
-
+    fontFamily: 'Gilroy-Light',
+    fontWeight: '600',
   },
 })

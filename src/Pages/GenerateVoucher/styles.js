@@ -10,8 +10,7 @@ export default StyleSheet.create({
     width: '100%',
   },
   header: {
-    // backgroundColor: colors.red,
-    width: '100%',
+      width: '100%',
     height: 160,
     justifyContent: 'flex-end',
     alignItems: 'center',
@@ -19,8 +18,7 @@ export default StyleSheet.create({
   },
   headerBack: {
     position: 'absolute',
-    //backgroundColor: colors.gray,
-    width: '100%',
+       width: '100%',
     height: 160,
     justifyContent: 'flex-end',
     alignItems: 'flex-start',
@@ -35,15 +33,13 @@ export default StyleSheet.create({
   },
   headerText: {
     fontSize: 16,
-    fontWeight: 'bold',
+    fontFamily: 'Gilroy-ExtraBold',
   },
 
-  main: {
-    //marginTop: 32,
-    //width: '100%',
-    flex: 1,
-   // backgroundColor: colors.gray,
 
+
+  main: {
+    flex: 1,
     justifyContent: 'space-around',
     alignItems: 'center',
   },
@@ -53,11 +49,12 @@ export default StyleSheet.create({
   },
   mainContainerTitle: {
     fontSize: 14,
-    fontWeight: 'bold',
+    fontFamily:'Inter-Regular',
+    fontWeight:'700',
   },
   mainContainerText: {
     fontSize: 14,
-    //fontWeight: 'bold',
+    fontFamily:'Inter-Regular',
   },
   mainInput: {
     flexDirection: 'row',
@@ -65,30 +62,33 @@ export default StyleSheet.create({
   mainInputText: {
     fontSize: 36,
     color: colors.blue,
-
+    fontFamily:'Gilroy-Light',
+    fontWeight:'500',
   },
   mainTextInput: {
     fontSize: 36,
     color: colors.blue,
+    fontFamily:'Gilroy-Light',
+    fontWeight:'500',
+     marginRight: 5,
   },
-
   mainBottonContainer: {
     justifyContent: 'center',
     alignItems: 'center',
   },
   mainBottonContainerTitle: {
     fontSize: 18,
-    fontWeight: 'bold',
+    fontFamily:'Gilroy-ExtraBold',
   },
   mainBottonContainerText: {
     fontSize: 16,
-    //fontWeight: 'bold',
+    fontFamily:'Gilroy-Light',
+    fontWeight:'500',
   },
 
 
   footer: {
     backgroundColor: colors.white,
-
     justifyContent: 'flex-end',
     alignItems: 'center',
   },
@@ -101,11 +101,10 @@ export default StyleSheet.create({
     marginVertical: 40,
     width: width - 40,
     borderRadius: 8,
-
   },
   footerButtonText: {
     fontSize: 16,
-    fontWeight: 'bold',
+    fontFamily:'Gilroy-ExtraBold',
     color: colors.white,
   },
 

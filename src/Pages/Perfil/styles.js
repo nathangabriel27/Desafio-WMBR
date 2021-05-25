@@ -1,7 +1,6 @@
 import { Dimensions, StyleSheet, } from 'react-native';
 const { height, width } = Dimensions.get('window');
-import { colors, sizes } from '../../Constants/theme';
-
+import { colors } from '../../Constants/theme';
 
 export default StyleSheet.create({
   container: {
@@ -20,16 +19,14 @@ export default StyleSheet.create({
     flexDirection: 'row',
   },
   headerProfile: {
-    //backgroundColor: colors.red,
     width: '100%',
     alignItems: 'center',
   },
   headerProfileName: {
     marginTop: 40,
     fontSize: 27,
-    fontWeight: 'bold',
+    fontFamily: 'Gilroy-ExtraBold',
     color: colors.white,
-
   },
   headerProfiletag: {
     height: 27,
@@ -39,10 +36,11 @@ export default StyleSheet.create({
     paddingHorizontal: 31,
     borderRadius: 160,
     marginTop: 13,
-
   },
   headerProfileNameTag: {
     color: colors.blue,
+    fontFamily: 'Gilroy-Light',
+    fontWeight: '500',
   },
   headerProfileButton: {
     width: '80%',
@@ -57,7 +55,7 @@ export default StyleSheet.create({
     flexDirection: 'row',
   },
   headerProfileText: {
-    //width: '100%',
+    fontFamily: 'Gilroy-ExtraBold',
     fontSize: 14,
     color: colors.blue,
     fontWeight: 'bold'
@@ -71,16 +69,13 @@ export default StyleSheet.create({
     alignItems: 'center',
     borderRadius: 8,
     marginBottom: 34,
-
     flexDirection: 'row',
-
   },
   headerProfileButtonLogoutText: {
     fontSize: 14,
     color: colors.white,
+    fontFamily: 'Gilroy-ExtraBold',
   },
-
-
   body: {
     marginTop: 15,
   },

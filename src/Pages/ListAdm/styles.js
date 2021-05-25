@@ -14,6 +14,8 @@ export default StyleSheet.create({
     color: colors.white,
     paddingBottom: 20,
   },
+
+
   header: {
     backgroundColor: colors.white,
     height: 140,
@@ -23,7 +25,7 @@ export default StyleSheet.create({
     borderBottomColor: colors.gray3,
   },
   headerText: {
-    fontWeight: 'bold',
+    fontFamily: 'Gilroy-ExtraBold',
     fontSize: 20,
   },
   headerDateItens: {
@@ -38,11 +40,13 @@ export default StyleSheet.create({
   headerDateText: {
     color: colors.gray2,
     marginLeft: 5,
+    fontFamily: 'Inter-Regular',
   },
   headerDateSubtext: {
     color: colors.blue,
-    fontWeight: 'bold',
+    fontFamily: 'Inter-Bold',
   },
+
 
   friends: {
     height: 176,
@@ -51,7 +55,6 @@ export default StyleSheet.create({
     borderBottomColor: colors.gray3,
   },
   friendsHeader: {
-    //backgroundColor: colors.green1,
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
@@ -64,17 +67,18 @@ export default StyleSheet.create({
   },
   friendsHeaderUsersNumbers: {
     color: colors.blue,
-    fontWeight: 'bold',
+    fontFamily: 'Gilroy-ExtraBold',
     fontSize: 14,
   },
   friendsHeaderUsersText: {
     color: colors.black,
-    fontWeight: '700',
+    fontFamily: 'Gilroy-ExtraBold',
     fontSize: 14,
   },
   friendsHeaderView: {
     color: colors.blue,
     fontSize: 14,
+    fontFamily: 'Inter-Regular',
   },
 
 
@@ -93,19 +97,22 @@ export default StyleSheet.create({
     marginRight: 11,
     marginBottom: 25,
     fontSize: 12,
+    fontFamily: 'Inter-Regular',
 
   },
   pricingCollectedValue: {
-    //marginBottom: 18,
+    fontFamily: 'Gilroy-ExtraBold',
     fontSize: 28,
     fontWeight: '900',
     color: colors.green2,
   },
+
+
+
   progress: {
     backgroundColor: colors.red,
     paddingHorizontal: 20,
   },
-
   progressState1: {
     backgroundColor: colors.gray5,
     height: 28,
@@ -141,9 +148,10 @@ export default StyleSheet.create({
   },
   progressText: {
     fontSize: 14,
-    fontWeight: 'bold',
+    fontFamily: 'Gilroy-ExtraBold',
     color: colors.black,
   },
+
 
   pricingTotal: {
     marginTop: 43,
@@ -155,6 +163,7 @@ export default StyleSheet.create({
   pricingMin: {
     fontSize: 12,
     color: colors.blue,
+    fontFamily: 'Inter-Regular',
   },
   pricingTotalView: {
     flexDirection: 'row',
@@ -162,11 +171,14 @@ export default StyleSheet.create({
   pricingTotalText: {
     fontSize: 12,
     color: colors.gray1,
+    fontFamily: 'Inter-Regular',
   },
   pricingTotalValue: {
     fontSize: 12,
     color: colors.black,
+    fontFamily: 'Inter-Regular',
   },
+
 
   body: {
     height: 202,
@@ -179,12 +191,14 @@ export default StyleSheet.create({
   bodyTitle: {
     marginBottom: 11,
     fontSize: 15,
-    fontWeight: 'bold'
+    fontFamily: 'Inter-Bold',
   },
   bodyText: {
     paddingRight: 20,
     fontSize: 13,
+    fontFamily: 'Inter-Regular',
   },
+
 
   video: {
     height: 291,
@@ -194,7 +208,7 @@ export default StyleSheet.create({
   videoTitle: {
     paddingBottom: 12,
     fontSize: 12,
-    fontWeight: 'bold',
+    fontFamily: 'Inter-Bold',
   },
   videoPlayer: {
     height: 176,
@@ -210,7 +224,7 @@ export default StyleSheet.create({
     paddingHorizontal: 20,
     paddingTop: 13,
     justifyContent: 'center',
-    // alignItems: 'center',
+
     shadowColor: "#000",
     shadowOffset: {
       width: 0,
@@ -220,7 +234,6 @@ export default StyleSheet.create({
     shadowRadius: 3.84,
 
     elevation: 5,
-
   },
   footerButtonBlue: {
     backgroundColor: colors.blue,
@@ -230,13 +243,13 @@ export default StyleSheet.create({
     width: '70%',
     borderRadius: 8,
     flexDirection: 'row',
-
   },
   footerText: {
     marginLeft: 10,
     fontSize: 12,
     color: colors.white,
-    fontWeight: 'bold',
+    fontFamily: 'Gilroy-ExtraBold',
+
   },
   footerButtonBack: {
     marginLeft: 13,

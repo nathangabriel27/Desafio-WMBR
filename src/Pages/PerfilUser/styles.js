@@ -1,12 +1,8 @@
-import { Dimensions, StyleSheet, } from 'react-native';
-const { height, width } = Dimensions.get('window');
-import { colors, sizes } from '../../Constants/theme';
-
+import { StyleSheet, } from 'react-native';
+import { colors } from '../../Constants/theme';
 
 export default StyleSheet.create({
-
   header: {
-    // backgroundColor: colors.red,
     width: '100%',
     height: 160,
     justifyContent: 'flex-end',
@@ -15,7 +11,6 @@ export default StyleSheet.create({
   },
   headerBack: {
     position: 'absolute',
-    //backgroundColor: colors.gray,
     width: '100%',
     height: 160,
     justifyContent: 'flex-end',
@@ -31,10 +26,9 @@ export default StyleSheet.create({
   },
   headerText: {
     fontSize: 16,
-    fontWeight: 'bold',
+    fontFamily: 'Gilroy-ExtraBold',
   },
   containerPhoto: {
-    //backgroundColor: colors.red,
     justifyContent: 'center',
     alignItems: 'center',
     height: 236,
@@ -58,10 +52,7 @@ export default StyleSheet.create({
     elevation: 5,
   },
 
-
-
   buttonEdit: {
-    //backgroundColor: colors.red1,
     flexDirection: 'row',
     paddingVertical: 36,
     marginHorizontal: 20,
@@ -70,12 +61,14 @@ export default StyleSheet.create({
   },
   buttonEditTitle: {
     fontSize: 14,
+    fontFamily: 'Inter-Regular',
   },
   buttonEditText: {
     flex: 1,
     textAlign: 'right',
     marginHorizontal: 26,
-    fontSize: 14
-
+    fontSize: 14,
+    fontFamily: 'Gilroy-Light',
+    fontWeight: '700',
   },
 })

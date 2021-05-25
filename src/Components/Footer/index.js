@@ -1,41 +1,24 @@
 import React, { useContext, useState, useRef, useEffect } from 'react';
-
 import { Image, Text, TouchableOpacity, View } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-
 import styles from './styles'
 
-
-
 export default function Footer(props) {
-  const { id, title, drinkName, autor, evaluation, ingredient, data } = props
+  const { title } = props
   const navigation = useNavigation()
 
-
-
-
   function navigateToPerfil() {
-    //console.log('props:',props);
     navigation.navigate('Perfil')
   }
   function navigateToCarteira() {
-    //console.log('props:',props);
     navigation.navigate('Carteira')
   }
   function navigateToGenerateVoucher() {
-    //console.log('props:',props);
     navigation.navigate('GenerateVoucher')
   }
   function navigateToList() {
-    //console.log('props:',props);
     navigation.navigate('List')
   }
-
-
-  useEffect(() => {
-    ///console.log('state FOOTER',state[0]);
-  }, [])
-
 
   return (
 
@@ -53,23 +36,19 @@ export default function Footer(props) {
           }}
         />
         <Text style={styles.bottonText}>{title === 'Voucher' ? 'Voucher' : null}</Text>
-
       </TouchableOpacity>
 
       <TouchableOpacity
         style={title === 'Listas' ? styles.footerButtonSelected : styles.footerButton}
-      onPress={() => navigateToList()}
+        onPress={() => navigateToList()}
       >
         <Image
           source={require('../../../assets/listas1.png')}
           style={{
             marginTop: 30,
-
           }}
         />
-
         <Text style={styles.bottonText}>{title === 'Listas' ? 'Listas' : null}</Text>
-
       </TouchableOpacity>
 
       <TouchableOpacity
@@ -78,12 +57,9 @@ export default function Footer(props) {
       >
         <Image
           source={require('../../../assets/logohermy.png')}
-          style={{
-           
-       
-          }}
         />
       </TouchableOpacity>
+
       <TouchableOpacity
         style={title === 'Carteira' ? styles.footerButtonSelected : styles.footerButton}
         onPress={() => navigateToCarteira()}
@@ -92,7 +68,6 @@ export default function Footer(props) {
           source={require('../../../assets/carteira2.png')}
           style={{
             marginTop: 30,
-    
           }}
         />
         <Text style={styles.bottonText}>{title === 'Carteira' ? 'Carteira' : null}</Text>
@@ -106,11 +81,9 @@ export default function Footer(props) {
           source={require('../../../assets/perfil.png')}
           style={{
             marginTop: 30,
-
           }}
         />
         <Text style={styles.bottonText}>{title === 'Perfil' ? 'Perfil' : null}</Text>
-
       </TouchableOpacity>
 
     </View>

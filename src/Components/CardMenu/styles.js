@@ -8,7 +8,6 @@ export default StyleSheet.create({
     backgroundColor: colors.white,
     flexDirection: 'row',
     alignItems: 'center',
-    //justifyContent: 'center',
     marginHorizontal: 20,
     borderRadius: 12,
     marginVertical: 8,
@@ -22,10 +21,6 @@ export default StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     marginHorizontal: 20,
-
-  },
-  containerImage: {
-
   },
   body: {
     paddingVertical: 18,
@@ -33,33 +28,12 @@ export default StyleSheet.create({
   },
   bodyName: {
     fontSize: 14,
-    fontWeight: 'bold',
+    fontFamily: 'Inter-Bold',
     color: colors.gray2,
-
   },
   bodyDescription: {
     fontSize: 13,
     color: colors.gray1,
+    fontFamily: 'Inter-Regular',
   },
-  bodyValue: {
-    marginRight: 20,
-    alignItems: 'flex-end',
-    justifyContent: 'flex-end',
-    //backgroundColor: colors.gray4
-  },
-  bodyValueTitlePositive: {
-    fontSize: 14,
-    color: colors.green
-
-  },
-  bodyValueTitleNegative: {
-    fontSize: 14,
-    color: colors.red
-  },
-  bodyValueSubText: {
-    fontSize: 14,
-    color: colors.gray,
-  },
-
-
 })

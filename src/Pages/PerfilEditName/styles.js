@@ -10,8 +10,7 @@ export default StyleSheet.create({
     width: '100%',
   },
   header: {
-    // backgroundColor: colors.red,
-    width: '100%',
+     width: '100%',
     height: 160,
     justifyContent: 'flex-end',
     alignItems: 'center',
@@ -19,8 +18,7 @@ export default StyleSheet.create({
   },
   headerBack: {
     position: 'absolute',
-    //backgroundColor: colors.gray,
-    width: '100%',
+      width: '100%',
     height: 160,
     justifyContent: 'flex-end',
     alignItems: 'flex-start',
@@ -35,12 +33,11 @@ export default StyleSheet.create({
   },
   headerText: {
     fontSize: 16,
-    fontWeight: 'bold',
+    fontFamily:'Gilroy-ExtraBold',
   },
 
   main: {
-    //backgroundColor: colors.gray,
-    marginTop: 40,
+     marginTop: 40,
     marginHorizontal: 20,
     height: 131,
     justifyContent: 'space-between',
@@ -55,7 +52,6 @@ export default StyleSheet.create({
     justifyContent: 'flex-end',
     alignItems: 'flex-start',
 
-
     shadowColor: "#000",
     shadowOffset: {
       width: 0,
@@ -67,13 +63,12 @@ export default StyleSheet.create({
     elevation: 3,
   },
   mainContainerText: {
-    // backgroundColor: colors.red,
+    fontFamily:'Inter-Regular',
     marginLeft: 12,
     fontSize: 14
 
   },
   mainTextInput: {
-    //backgroundColor: colors.gray,
     marginLeft: 17,
     width: '90%',
   },
@@ -93,11 +88,10 @@ export default StyleSheet.create({
     marginVertical: 40,
     width: width - 40,
     borderRadius: 8,
-
   },
   footerButtonText: {
     fontSize: 16,
-    fontWeight: 'bold',
+    fontFamily:'Gilroy-ExtraBold',
     color: colors.white,
   },
 
