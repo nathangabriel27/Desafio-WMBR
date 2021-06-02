@@ -4,7 +4,7 @@ import { Alert, Image, ImageBackground, Keyboard, Dimensions, Platform, ScrollVi
 import { StatusBar } from 'expo-status-bar';
 import { TabView, SceneMap } from 'react-native-tab-view';
 
-import Loading from '../../Components/Loading'
+
 import styles from './styles';
 import { transactionsAndVouchers } from '../../Constants/data'
 import CardList from '../../Components/CardList';
@@ -14,7 +14,6 @@ import Footer from '../../Components/Footer';
 export default function Carteira() {
   const navigation = useNavigation()
   const route = useRoute()
-  const [loadingVisible, setLoadingVisible] = useState(false)
   const [transactions, setTransactions] = useState(false)
 
 
@@ -192,7 +191,7 @@ export default function Carteira() {
                     source={require('../../../assets/carteira.png')}
                     style={{
                       marginRight: 26,
-                    
+
                     }}
                   />
                   <View>
@@ -261,7 +260,7 @@ export default function Carteira() {
                 style={{
                   marginRight: 33,
                   marginLeft: 24,
-                
+
                 }}
               />
               <View style={styles.headerCardBalanceText}>
